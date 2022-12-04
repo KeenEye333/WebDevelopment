@@ -1,0 +1,179 @@
+body, html
+{
+  margin: 0; padding: 0; height: 100%; overflow: auto;
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+
+/* Fullscreen iframe  */
+#frameLoad
+{
+  position:fixed; left: 0; right: 0; bottom: 0px; top: 64px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.content {
+  padding: 16px;
+}
+
+
+/* Sticky Div on Scroll  */
+div.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+
+/* Navigation Bar  */
+#navbar {
+  transition: margin-left .5s;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #04AA6D;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+/*Floatbar r*/
+
+#settingBar {
+  margin-top: 8%;
+  margin-bottom: 1%;
+  bottom: 2%;
+  right:2%;
+  position: absolute;
+  border-radius: 9px;
+  background-color: rgb(0,0,0);
+  background-color: rgba(30,5,30, 0.5);
+}
+
+.floatBar{
+  bottom: 3%;
+  border-radius: 9px;
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+}
+
+.floatBar:hover {
+  margin-top: -4%;
+  margin-bottom: -4%;
+  padding: 20px 20px 20px 20px;
+  border-radius: 9px;
+  background-color: #04AA6D;
+}
+
+
+
+
+/* Sidepanels */
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 900px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+#frameLoad {
+  transition: margin-left .5s; /* If you want a transition effect */
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+/* Custom Scrollbars  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
